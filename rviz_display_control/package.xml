@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>rviz_display_control</name>
+  <version>0.1.0</version>
+  <description>RViz2 plugin that reconciles a managed display subtree from a latched DisplaySet topic.</description>
+  <maintainer email="voshch@arena-rosnav.org">voshch</maintainer>
+  <license>Apache-2.0</license>
+  <url type="repository">https://github.com/voshch/rviz_display_control</url>
+  <url type="bugtracker">https://github.com/voshch/rviz_display_control/issues</url>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_ros</buildtool_depend>
+
+  <depend condition="$ROS_DISTRO == 'rolling' or $ROS_DISTRO == 'lyrical'">qt6-base-dev</depend>
+  <depend condition="$ROS_DISTRO != 'rolling' and $ROS_DISTRO != 'lyrical'">qtbase5-dev</depend>
+  <depend>rclcpp</depend>
+  <depend>rviz_common</depend>
+  <depend>pluginlib</depend>
+  <depend>rviz_display_control_msgs</depend>
+  <depend>rcl_interfaces</depend>
+
+  <exec_depend>rviz_default_plugins</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+  <test_depend>ament_cmake_gtest</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

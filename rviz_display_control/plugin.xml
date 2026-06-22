@@ -1,0 +1,5 @@
+<library path="reconciler">
+  <class type="rviz_display_control::Reconciler" base_class_type="rviz_common::Panel">
+    <description>Reconciles a managed display subtree from a latched rviz_display_control_msgs/DisplaySet topic.</description>
+  </class>
+</library>
